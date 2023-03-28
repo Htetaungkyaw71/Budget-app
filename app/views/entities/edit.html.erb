@@ -1,0 +1,9 @@
+<h1>Editing entity</h1>
+
+<%= render "editform", entity: @entity, user_id: @user_id  %>
+
+<br>
+
+<div>
+  <%= link_to "Back to group", group_path(params[:group_id]) %>
+</div>
