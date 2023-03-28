@@ -1,6 +1,5 @@
 class EntitiesController < ApplicationController
-  before_action :set_entity, only: %i[ edit update destroy ]
-
+  before_action :set_entity, only: %i[edit update destroy]
 
   # GET /entities/new
   def new
@@ -19,7 +18,7 @@ class EntitiesController < ApplicationController
     @entity.user_id = current_user.id
     respond_to do |format|
       if @entity.save
-        format.html { redirect_to group_url(params[:group_id]), notice: "Entity was successfully created." }
+        format.html { redirect_to group_url(params[:group_id]), notice: 'Entity was successfully created.' }
         format.json { render :show, status: :created, location: @entity }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -32,7 +31,7 @@ class EntitiesController < ApplicationController
   def update
     respond_to do |format|
       if @entity.update(entity_params)
-        format.html { redirect_to  group_url(params[:group_id]), notice: "Entity was successfully updated." }
+        format.html { redirect_to group_url(params[:group_id]), notice: 'Entity was successfully updated.' }
         format.json { render :show, status: :ok, location: @entity }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -46,20 +45,21 @@ class EntitiesController < ApplicationController
     @entity.destroy
 
     respond_to do |format|
-      format.html { redirect_to group_url(params[:group_id]), notice: "Entity was successfully destroyed." }
+      format.html { redirect_to group_url(params[:group_id]), notice: 'Entity was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_entity
-      p params[:id]
-      @entity = Entity.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def entity_params
-      params.require(:entity).permit(:name, :amount, :group_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_entity
+    p params[:id]
+    @entity = Entity.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def entity_params
+    params.require(:entity).permit(:name, :amount, :group_id)
+  end
 end
