@@ -6,6 +6,9 @@
   <% @groups.each do |group| %>
     <%= render group %>
     <p>
+        Total : <%= group.total %>
+    </p>
+    <p>
       <%= link_to "Show this group", group %>
     </p>
   <% end %>

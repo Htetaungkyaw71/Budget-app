@@ -1,10 +1,9 @@
 <h1>Editing entity</h1>
 
-<%= render "editform", entity: @entity %>
+<%= render "editform", entity: @entity, user_id: @user_id  %>
 
 <br>
 
 <div>
-  <%= link_to "Show this entity", group_entity_path(params[:group_id],@entity.id) %> |
-  <%= link_to "Back to entities", group_entities_path %>
+  <%= link_to "Back to group", group_path(params[:group_id]) %>
 </div>
