@@ -3,10 +3,15 @@
 <%= render @group %>
 
 <div>
-  <%= link_to "Edit this group", edit_group_path(@group) %> |
   <%= link_to "Back to groups", groups_path %>
-  |
-    <%= button_to "Destroy this group", @group, method: :delete %>
+  <% if can? :edit, @group %>
+      <%= link_to "Edit this group", edit_group_path(@group) %> |
+      <% end %>
+    <% if can? :destroy, @group %>
+   <%= button_to "Destroy this group", @group, method: :delete %>
+      <% end %>
+ 
+    
 
   <h1>Entities</h1>
   <h2>Total <%= @group.total %> </h2>
@@ -15,8 +20,12 @@
     <% @entities.each do |entity| %>p
       <%= render entity %>
       <p>
+      <% if can? :edit, entity %>
         <%= link_to "Edit this entity", edit_group_entity_path(@group,entity) %> |
-        <%= button_to "Destroy this entity",  group_entity_path(@group,entity) , method: :delete %>
+      <% end %>
+      <% if can? :destroy, entity %>
+        <%= button_to "Destroy this entity",  group_entity_path(@group,entity) , method: :delete %>   
+      <% end %>
       </p>
     <% end %>
   </div>
