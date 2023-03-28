@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 220px;
+}
+
+.home-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+  
+}
+
+
+.signup {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.login {
+    display: block;
+    text-decoration: none;
+    color: white;
+
+    background-color: #3979C3;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}

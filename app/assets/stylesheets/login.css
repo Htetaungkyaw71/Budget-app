@@ -1,0 +1,53 @@
+.login-nav {
+    background-color:#3979C3;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.login-nav p {
+    color: white;
+}
+
+.login-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-nav .actions input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.field input {
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    border-left: none;
+    border-right: none;
+    border: 1px solid rgb(209, 209, 209) ;
+}
+
+.field input:focus {
+    outline: none;
+}
+
+
+.email {
+    border-bottom: none!important;
+}
+
+.links {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 18px;
+}
