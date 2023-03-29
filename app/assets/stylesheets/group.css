@@ -1,0 +1,177 @@
+.group-img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#groups a {
+    text-decoration: none;
+}
+
+.group {
+    display: flex;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px rgb(214, 213, 213);
+    margin-bottom: 10px;
+    
+}
+.group p {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.group b {
+    display: block;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.date {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.group-footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #60B524;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.group-footer a {
+   text-decoration: none;
+   color: white;
+   border: 1px solid white;
+   padding: 10px 80px 10px 80px;
+   border-radius: 5px;
+
+}
+
+.submit-btn {
+    text-align: center;
+    padding: 10px;
+}
+
+.submit-btn input {
+    padding: 10px;
+    background-color: #2F81BD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.group-links {
+    text-align: center;
+}
+
+.transactions {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px rgb(214, 213, 213);
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.transactions h3 {
+    margin-bottom: 10px;
+}
+
+.entity {
+    display: flex;
+}
+
+.entity p {
+    font-size: 20px;
+}
+
+.entity b{
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.date-t {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.detail-btn {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.detail-btn a {
+    text-decoration: none;
+    border: none;
+    background-color:#60B524;
+    padding: 5px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.detail-btn form button {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(226, 30, 30);  
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.entity-links {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.entity-links a {
+    text-decoration: none;
+    border: none;
+    background-color:#60B524;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.entity-links button {
+    text-decoration: none;
+    border: none;
+    background-color: rgb(226, 30, 30);  
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.back {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+
