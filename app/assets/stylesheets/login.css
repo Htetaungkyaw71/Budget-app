@@ -1,69 +1,68 @@
 .login-nav {
-    background-color:#3979C3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    font-size: 18px;
-    margin-bottom: 30px;
+  background-color: #3979c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .login-nav p {
-    color: white;
+  color: white;
 }
 
 .login-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-.login-nav .actions input {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 .field input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-left: none;
-    border-right: none;
-    border: 1px solid rgb(209, 209, 209);
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-left: none;
+  border-right: none;
+  border: 1px solid rgb(209, 209, 209);
+}
+
+.login-nav .actions input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .field select {
-    text-align: center;
-    border: 1px solid rgb(209, 209, 209);
-    padding: 10px;
-    font-size: 16px;
+  text-align: center;
+  border: 1px solid rgb(209, 209, 209);
+  padding: 10px;
+  font-size: 16px;
 }
 
 .field {
-    text-align: center;
+  text-align: center;
 }
 
 .field select:focus {
-    outline: none;
+  outline: none;
 }
 
 .field input:focus {
-    outline: none;
+  outline: none;
 }
 
-
 .email {
-    border-bottom: none!important;
+  border-bottom: none !important;
 }
 
 .links {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .links a {
-    text-decoration: none;
-    font-size: 18px;
+  text-decoration: none;
+  font-size: 18px;
 }
