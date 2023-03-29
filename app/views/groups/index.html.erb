@@ -1,17 +1,21 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Groups</h1>
+ <%= render "navbar/navbar", nav_name: "CATEGORIES" %>
 
 <div id="groups">
   <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-        Total : <%= group.total %>
-    </p>
-    <p>
-      <%= link_to "Show this group", group %>
-    </p>
+  <a href=<%= "/groups/#{group.id}" %>>
+  <%= render group %>
+  </a>
   <% end %>
+  <div class="group-footer">
+  <%= link_to "New Category", new_group_path %>
+</div>
 </div>
 
-<%= link_to "New group", new_group_path %>
+
+ 
+
+
+
+
+
+

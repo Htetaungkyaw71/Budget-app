@@ -1,12 +1,13 @@
-<div id="<%= dom_id group %>">
+<div id="<%= dom_id group %>" class="group">
+    <img src=<%= group.icon  %> class="group-img"/>
   <p>
-    <strong>Name:</strong>
     <%= group.name %>
+    <span class="date">
+      <%= group.created_at.strftime('%d %b %Y')%>
+    <span>
   </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
+  <b>
+    $ <%= group.total %>
+  </b>
 
 </div>

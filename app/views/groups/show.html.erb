@@ -1,37 +1,56 @@
-<p style="color: green"><%= notice %></p>
+<%= render "navbar/navbar", nav_name: "DETAIL" %>
 
 <%= render @group %>
 
-<div>
-  <%= link_to "Back to groups", groups_path %>
+
+<div class="transactions">
+
+  <div id="entities">
+    <h3>All transactions</h3>
+    <% @entities.each do |entity| %>
+      <%= render entity %>
+      <div class="detail-btn">
+      <% if can? :edit, entity %>
+        <%= link_to "Edit", edit_group_entity_path(@group,entity) %> 
+      <% end %>
+      <% if can? :destroy, entity %>
+        <%= button_to "Destroy",  group_entity_path(@group,entity) , method: :delete %>   
+      <% end %>
+      </div>
+    <% end %>
+    <div class="total">
+      <p>
+        Total Payment
+      <p>
+      <b>
+        $ <%= @group.total %>
+      <b>
+    </div>
+
+  </div>
+
+</div>
+
+  <div class="entity-links">
+
   <% if can? :edit, @group %>
-      <%= link_to "Edit this group", edit_group_path(@group) %> |
+      <%= link_to "Edit this group", edit_group_path(@group) %> 
       <% end %>
     <% if can? :destroy, @group %>
    <%= button_to "Destroy this group", @group, method: :delete %>
       <% end %>
- 
-    
 
-  <h1>Entities</h1>
-  <h2>Total <%= @group.total %> </h2>
+  </div>
 
-  <div id="entities">
-    <% @entities.each do |entity| %>p
-      <%= render entity %>
-      <p>
-      <% if can? :edit, entity %>
-        <%= link_to "Edit this entity", edit_group_entity_path(@group,entity) %> |
-      <% end %>
-      <% if can? :destroy, entity %>
-        <%= button_to "Destroy this entity",  group_entity_path(@group,entity) , method: :delete %>   
-      <% end %>
-      </p>
-    <% end %>
+  <div class="back">
+     <%= link_to "Back to groups", groups_path %>
+
   </div>
 
 
-  <%= link_to "New entity", new_group_entity_path(@group) %>
+ 
+<div class="group-footer">
+    <%= link_to "New Transaction", new_group_entity_path(@group) %>
+</div>  
 
-
-</div>
+        
