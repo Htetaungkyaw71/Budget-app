@@ -1,14 +1,10 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user! unless Rails.env == 'test'
+  before_action :authenticate_user!, [:home] unless Rails.env == 'test'
   protect_from_forgery with: :exception
 
   before_action :update_allowed_parameters, if: :devise_controller?
 
   protected
-
-  def authenticate_user!
-    redirect_to root_path unless User.any?
-  end
 
   def after_sign_in_path_for(_resource)
     groups_url
