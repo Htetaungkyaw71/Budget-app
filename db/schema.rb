@@ -34,7 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_30_043619) do
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: :cascade, schema_name: 'budget' do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
