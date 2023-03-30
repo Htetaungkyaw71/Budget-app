@@ -68,7 +68,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://recipe-za9j.onrender.com/)
+- [Live Demo Link](https://budget-jf0u.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
