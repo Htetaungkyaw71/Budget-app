@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :entities
   has_many :groups
+
+  attr_accessor :name
 end
