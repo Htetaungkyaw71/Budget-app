@@ -172,7 +172,7 @@ If you like this project, you can give star this repo.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank microverse for supporting to do this project.
-
+I would like to thank to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) the [author of the original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=), as required by the [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
