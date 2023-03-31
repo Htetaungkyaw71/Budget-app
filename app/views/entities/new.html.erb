@@ -1,0 +1,9 @@
+<%= render "navbar/navbar", nav_name: "NEW TRANSACTION" %>
+
+<%= render "form", entity: @entity, user_id: @user_id %>
+
+<br>
+
+<div class="group-links">
+  <%= link_to "Back to transactions", group_path(params[:group_id]) %>
+</div>

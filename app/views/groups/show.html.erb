@@ -1,0 +1,56 @@
+<%= render "navbar/navbar", nav_name: "DETAIL" %>
+
+<%= render @group %>
+
+
+<div class="transactions">
+
+  <div id="entities">
+    <h3>All transactions</h3>
+    <% @entities.each do |entity| %>
+      <%= render entity %>
+      <div class="detail-btn">
+      <% if can? :edit, entity %>
+        <%= link_to "Edit", edit_group_entity_path(@group,entity) %> 
+      <% end %>
+      <% if can? :destroy, entity %>
+        <%= button_to "Destroy",  group_entity_path(@group,entity) , method: :delete %>   
+      <% end %>
+      </div>
+    <% end %>
+    <div class="total">
+      <p>
+        Total Payment
+      <p>
+      <b>
+        $ <%= @group.total %>
+      <b>
+    </div>
+
+  </div>
+
+</div>
+
+  <div class="entity-links">
+
+  <% if can? :edit, @group %>
+      <%= link_to "Edit this group", edit_group_path(@group) %> 
+      <% end %>
+    <% if can? :destroy, @group %>
+   <%= button_to "Destroy this group", @group, method: :delete %>
+      <% end %>
+
+  </div>
+
+  <div class="back">
+     <%= link_to "Back to groups", groups_path %>
+
+  </div>
+
+
+ 
+<div class="group-footer">
+    <%= link_to "New Transaction", new_group_entity_path(@group) %>
+</div>  
+
+        

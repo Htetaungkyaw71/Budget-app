@@ -1,0 +1,14 @@
+<div id="<%= dom_id entity %>" class="entity">
+  <p>
+      <%= entity.name %>
+    <br>
+    <span class="date-t">
+      <%= entity.created_at.strftime('%d %b %Y') %>
+    </span>
+  </p>
+
+  <b>
+    $<%= entity.amount %>
+  </b>
+
+</div>

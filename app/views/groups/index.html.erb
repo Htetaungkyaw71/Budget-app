@@ -1,0 +1,21 @@
+ <%= render "navbar/navbar", nav_name: "CATEGORIES" %>
+
+<div id="groups">
+  <% @groups.each do |group| %>
+  <a href=<%= "/groups/#{group.id}" %>>
+  <%= render group %>
+  </a>
+  <% end %>
+  <div class="group-footer">
+  <%= link_to "New Category", new_group_path %>
+</div>
+</div>
+
+
+ 
+
+
+
+
+
+
